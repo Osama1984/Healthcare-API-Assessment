@@ -451,9 +451,7 @@ fetchAllPatients().then(allPatients => {
     console.log("\n=== READY TO SUBMIT? (y/n) ===");
     console.log("Review the analysis above. If everything looks correct, manually submit the assessment.");
     
-    // Comment out auto-submission for manual review
-    /*
-    // Prepare results for submission
+   
     const results = {
         high_risk_patients: high_risk_patients,
         fever_patients: fever_patients,
@@ -472,7 +470,6 @@ fetchAllPatients().then(allPatients => {
     }).catch(error => {
         console.error("Error submitting assessment:", error.message);
     });
-    */
 }).catch(error => {
     console.error("Error fetching patients:", error.message);
 });
